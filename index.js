@@ -48,4 +48,8 @@ function resetBoard() {
 }
 document.querySelector('body').addEventListener('click', () => {
     click = !click;
+    if(click) {
+        document.querySelector('.mode').textContent = "Mode: Coloring"
+    }else
+    document.querySelector('.mode').textContent = "Mode: Not Coloring"
 });
