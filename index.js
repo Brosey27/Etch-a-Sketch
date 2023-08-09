@@ -28,7 +28,7 @@ else {
 }
 
 function colorSquare() {
-    if(color = "random"){
+    if(color === "random"){
         this.style.backgroundColor = `hs1(${Math.random() * 360}, 100%, 50%}`;
     }else {
         this.style.backgroundColor = color;
