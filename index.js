@@ -8,6 +8,7 @@ board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 let amount = size * size
 for(let i = 0; i <amount; i++) {
     let square = document.createElement('div')
+    square.addEventListener('mouseover', ()=> (this.style.backgroundColor = "black"))
     square.style.backgroundColor = 'blue'
     board.insertAdjacentElement('beforeend' , square);
 }
@@ -16,5 +17,10 @@ for(let i = 0; i <amount; i++) {
 populateBoard(16);
 
 function changeSize(input) {
-    populateBoard(input)
+    if (input >=2 || input <= 100) {
+    populateBoard(input);
+}
+else {
+    console.log("too many squares");
+}
 }
