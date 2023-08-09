@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(rgba(96, 79, 252, 0.082), white);
+    
   }
   .board {
     width: 80%;
@@ -30,7 +31,9 @@
   }
   .title {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    color:white;
+    padding-left: 220px;
   }
   .buttons {
     margin-top: 10px;
@@ -84,7 +87,13 @@
   
   .mode {
     margin-bottom: 5px;
+    color:gray;
+    padding-left: 60px;
+    
   }
   .error {
     display: none;
+  }
+  body {
+    background-color: black;
   }
