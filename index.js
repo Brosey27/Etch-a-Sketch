@@ -10,7 +10,7 @@ board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 let amount = size * size
 for(let i = 0; i <amount; i++) {
     let square = document.createElement('div')
-    square.addEventListener('mouseover', colorSquare);
+    square.addEventListener("mouseover", colorSquare);
     square.style.backgroundColor = 'white';
     board.insertAdjacentElement('beforeend' , square);
 }
@@ -27,10 +27,10 @@ else {
 }
 }
 
-function colorSquare(){
-    this.style.backgroundColor = "color";
+function colorSquare() {
+    this.style.backgroundColor = color;
 }
 
-function changecolor(choice) {
+function changeColor(choice) {
     color = choice;
 }
