@@ -8,8 +8,8 @@ board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 let amount = size * size
 for(let i = 0; i <amount; i++) {
     let square = document.createElement('div')
-    square.addEventListener('mouseover', ()=> (square.style.backgroundColor = "black"))
-    square.style.backgroundColor = 'blue'
+    square.addEventListener('mouseover', colorSquare);
+    square.style.backgroundColor = 'white';
     board.insertAdjacentElement('beforeend' , square);
 }
 }
@@ -23,4 +23,8 @@ function changeSize(input) {
 else {
     console.log("too many squares");
 }
+}
+
+function colorSquare(){
+    this.style.backgroundColor = "black";
 }
