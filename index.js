@@ -1,4 +1,4 @@
-function populateboard(size){
+function populateBoard(size){
     let board = document.querySelector('.board')
 board.style.gridTemplateColumns = `repeat($(size) , 1fr)`;
 board.style.gridTemplateRows = `repeat($(size) , 1fr)`;
@@ -8,4 +8,10 @@ for(let i = 0; i<256; i++) {
     square.style.backgroundColor = 'blue'
     board.insertAdjacentElement('beforeend' , square);
 }
+}
+
+populateBoard(16);
+
+function changeSize(input) {
+    populateBoard(input)
 }
